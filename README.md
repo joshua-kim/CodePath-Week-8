@@ -18,24 +18,31 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: SQL Injection (SQLi)
 
-- [Github Link](https://github.com/jushkem/CodePath-Week-8/blob/master/Blue%20-%20SQL%20inject.gif?raw=true)
+- <img src="Blue - SQL inject.gif" width="800">
 
 Vulnerability #2: Session Hijacking/Fixation
 
+- <img src="Blue - session hijacking.gif" width="800">
 
 ## Green
 
 Vulnerability #1: Username Enumeration
 
+- <img src="username_enumeration.gif" width="800">
+
 Vulnerability #2: Cross-Site Scripting (XSS)
 
+- <img src="green - stored XSS.gif" width="800">
 
 ## Red
 
 Vulnerability #1: Cross-Site Request Forgery (CSRF)
 
+- <img src="red - CSRF.gif" width="800">
+
 Vulnerability #2: Insecure Direct Object Reference (IDOR)
 
+- <img src="red - IDOR.gif" width="800">
 
 ## Notes
 
